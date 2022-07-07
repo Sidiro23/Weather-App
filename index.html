@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets\style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <!-- Jumbotron to display the City name upon search -->
+    <div id="header" class="jumbotron jumbotron-fluid text-container">
+        <h1 id="header-text" class="display-2"></h1>
+        <div id="artist-credit"></div>
+    </div>
+
+    <!-- Main container for webpage content -->
+    <div id="content" class="container">
+        <div class="row">
+
+            <!-- Left side content with city search box and appended cities -->
+            <div id="content-left" class="col-md-3">
+                <form>
+                    <label for="search-city">Search for a City:</label>
+                    <div class="form-row">
+                        <input id="search-city" class="form-control" name="city" value="Austin"></input>
+                        <!-- fontawesome magnifying glass -->
+                        <button id="search-button" class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+                <div id="search-error"></div>
+                <!-- list of prior searched cities -->
+                <ul id="city-results" class="list-group mt-4"></ul>
+                <!-- clear storage button -->
+                <a id="clear-storage" href="#"></a>    
+            </div>
+
+            <!-- Right side content showing current weather and five day forecast displays on search -->
+            <div id="content-right" class="col-md-9 pt-4">
+                <!-- Current weather displayed on top -->
+                <div id="current-weather" class="border rounded"></div>
+                <!-- Five day forecast below the current weather -->
+                <div id="five-day-forecast" class="mt-5"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Custom Script -->
+    <script src="./assets\script.js"></script>
+    
+</body>
+</html>
