@@ -28,14 +28,14 @@
 }
 
 /* City Search width */
-#search-city{
+#city{
   width:80%;
 }
 
 
 
 /*Current weather */
-#current-weather {
+#current {
   padding-left: 15px;
 }
 
@@ -76,10 +76,10 @@
 
 /* Media queries */
 @media only screen and (max-width: 992px) {
-  #search-city{
+  #city{
       width:100%;
   }
-  #search-button{
+  #button{
       width:100%;
   }
 }
