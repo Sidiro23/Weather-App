@@ -8,6 +8,9 @@
 #### https://getbootstrap.com/docs/4.6/getting-started/introduction/
 #### https://developer.mozilla.org/en-US/
 #### https://momentjs.com/
+#### 4. Included screenshot of the app
+#### 5. Deployed Website URL :
+#### 
 
 ### Summary
 #### 1 The application provides current day forecast and 5 day forecast upon user city selection
