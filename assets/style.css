@@ -5,8 +5,9 @@
   background-size: cover;
   background-position-y: 40%;
   color:white;
-  background-color:rgb(83, 83, 83);
+  background-color: #295379;
   position:relative;
+
 }
 
 /* h1 style  */
@@ -31,6 +32,10 @@
 #city{
   width:80%;
 }
+#button{
+  width: 80%;
+  background-color: #295379;
+}
 
 
 
@@ -40,7 +45,7 @@
 }
 
 /* clear storage below list of cities */
-#clear-storage{
+#storage{
   color:grey;
   text-decoration: none;
   font-size:.75em;
@@ -50,7 +55,7 @@
 /* Weather card  */
 .weather-card{
   width: 9rem;
-  background-color: #0275d8;
+  background-color: #295379;
   color: white;
   text-align: center;
 }
@@ -85,7 +90,7 @@
 }
 @media only screen and (max-width: 575px) {
 
-  #fiveDayForecastUl{
+  #five-day{
       justify-content: center;
   }
 }
