@@ -54,9 +54,9 @@ var getCurConditions = (event)=>{
             //lat lon for UV from Open Weather
             let lat = response.coord.lat;
             let lon = response.coord.lon;
-            let uvQURL = "api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&APPID=" + apiKey;
+            let uvQURL = "https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&APPID=" + apiKey;
             //added heroku url to resolve cors issue , so i can get the UV
-            uvQURL = ' https://cors-anywhere.herokuapp.com/' + uvQURL;
+            //uvQURL = ' https://cors-anywhere.herokuapp.com/' + uvQURL;
             //fetch for UV
             fetch(uvQURL)
             .then(handleErrors)
