@@ -10,7 +10,7 @@
 #### https://momentjs.com/
 #### 4. Included screenshot of the app
 #### 5. Deployed Website URL :
-#### 
+#### https://sidiro23.github.io/Weather-App/
 
 ### Summary
 #### 1 The application provides current day forecast and 5 day forecast upon user city selection
